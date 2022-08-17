@@ -13,7 +13,7 @@ const calculateBMI = (weight, height) => {
 }
 
 
-const handleChange = (event) => {
+const handleSubmit = (event) => {
 	event.preventDefault()
 	const weight = parseInt(document.querySelector('#height').value);
 	const height = parseInt(document.querySelector('#height'));
@@ -26,6 +26,6 @@ const handleChange = (event) => {
 document.onreadystatechange = (s) => {
 	if (document.readyState === 'complete') {
 		console.log([...document.querySelectorAll('#height, #weight')])
-		document.querySelector('#bmi-form').addEventListener('submit', handleChange)
+		document.querySelector('#bmi-form').addEventListener('submit', handleSubmit)
 	}
 };
