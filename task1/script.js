@@ -25,7 +25,6 @@ const handleSubmit = (event) => {
 
 document.onreadystatechange = (s) => {
 	if (document.readyState === 'complete') {
-		console.log([...document.querySelectorAll('#height, #weight')])
 		document.querySelector('#bmi-form').addEventListener('submit', handleSubmit)
 	}
 };
